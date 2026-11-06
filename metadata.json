@@ -1,0 +1,6 @@
+{
+  "name": "Dandelion OS Sovereign Suite",
+  "description": "Interactive Web Simulator for Dandelion OS v4.1.2: Ternary Microkernel, Assistive Fly-By-Wire, Haar DWT Tremor Filter, and Harappan Tensegrity Engine",
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"],
+  "permissions": []
+}
