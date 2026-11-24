@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <div className="flex items-center space-x-2">
                 <span className="font-extrabold text-base tracking-tight text-slate-100">Dandelion OS</span>
                 <span className="px-2 py-0.5 text-xs font-mono rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-semibold">
-                  v4.1.2
+                  v4.2.0
                 </span>
                 <span className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
                   Ursine & Urshwera

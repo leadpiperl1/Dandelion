@@ -1,8 +1,8 @@
-name: Dandelion OS C99 & 16-Gate Verification Suite
+name: Dandelion Web Simulator Waystation CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "waystation/**" ]
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
@@ -11,16 +11,36 @@ permissions:
   contents: read
 
 jobs:
-  build-and-verify:
+  waystation-web-sim-verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: read
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v7
+      - name: Checkout Repository (Zero Persisted Credentials)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
-      - name: Compile and Verify C99 Kernels & 16-Gate FFI Suite
+      - name: Static Workflow Security Audit (zizmor)
+        uses: zizmorcore/zizmor-action@45d7276c9ca790aabd705e31ca99c6185c3e76dd # v0.8.1
+        with:
+          advanced-security: false
+
+      - name: Crimson Speedo, Lifecycle-Hook & Stdlib Invariant Gate (--seed 42)
         run: |
-          make clean
-          make all
-          make test
+          set -euo pipefail
+          bash scripts/audit_wfx_loot.sh .
+          python3 scripts/verify_web_sim_invariants.py --seed 42
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+
+      - name: Install Dependencies (--ignore-scripts) & Build Interactive Simulator
+        run: |
+          set -euo pipefail
+          npm install --ignore-scripts --no-audit --no-fund
+          npm run lint
+          npm run build

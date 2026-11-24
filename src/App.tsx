@@ -45,11 +45,11 @@ export function App() {
       <footer className="border-t border-slate-900 bg-slate-950/80 py-6 text-xs text-slate-500 font-mono">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center space-x-2">
-            <span>Dandelion OS v4.1.2</span>
+            <span>Dandelion Web Simulator v4.2.0</span>
             <span>•</span>
             <span>Justin D. Grimm (ORCID: 0009-0000-5299-0243)</span>
             <span>•</span>
-            <span>Zenodo DOI: 10.5281/zenodo.14159269</span>
+            <span>Zenodo DOI: 10.5281/zenodo.24508791</span>
           </div>
           <div className="text-slate-600">
             Front Porch at Heimat {"{0, 0, 0}"} · Gurley Karst Node 34.7549, -86.4119

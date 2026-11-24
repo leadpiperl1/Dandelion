@@ -1,10 +1,13 @@
 {
-  "title": "Dandelion OS v4.2.0: Zero-Copy DMA-BUF and io_uring Substrate Pipeline",
+  "title": "Dandelion OS Interactive Web Simulator (v4.2.0): React/TypeScript Browser Companion for Balanced Ternary Microkernel, Bite-10 Morse Bridge, Haar DWT, and Harappan Tensegrity",
   "upload_type": "software",
-  "description": "Dandelion OS v4.2.0 release introducing a high-performance, zero-allocation C99/Rust-compatible DMA-BUF and io_uring zero-copy pipeline with 64-byte L1 cache-line alignment, strict static assertions, and automated triad verification.",
+  "version": "4.2.0",
+  "publication_date": "2026-11-24",
+  "description": "Waystation-hardened interactive React/Vite/TypeScript browser simulator visualizing the Dandelion OS balanced-ternary microkernel, Bite-10 Morse/LIS bridge, Haar DWT tremor filter, Harappan tensegrity unloading solver, Ternary Raft consensus, and deterministic verification console. Companion web simulator to leadpiperl1/dandelion-os (v5.2.0), enforced with S_runner = 0, zero npm lifecycle hooks, --ignore-scripts CI builds, 14-day Dependabot cooldown, and CODE_SHOKUNIN_UNLATCHED = 255.",
   "creators": [
     {
       "name": "Grimm, Justin D.",
+      "affiliation": "Independent Dandelion Substrate Research Group, Gurley, Alabama 35748, USA",
       "orcid": "0009-0000-5299-0243"
     }
   ],
@@ -12,12 +15,18 @@
   "license": "mit",
   "keywords": [
     "Dandelion OS",
-    "C99",
-    "Rust",
-    "DMA-BUF",
-    "io_uring",
-    "zero-allocation",
+    "interactive web simulator",
     "balanced ternary",
-    "L1 cache alignment"
+    "Haar DWT",
+    "Harappan tensegrity",
+    "Ternary Raft",
+    "Waystation Punch-Card"
+  ],
+  "related_identifiers": [
+    { "scheme": "doi", "identifier": "10.5281/zenodo.21255229", "relation": "cites" },
+    { "scheme": "doi", "identifier": "10.5281/zenodo.24401748", "relation": "cites" },
+    { "scheme": "doi", "identifier": "10.5281/zenodo.24508791", "relation": "cites" },
+    { "scheme": "url", "identifier": "https://github.com/leadpiperl1/dandelion-os", "relation": "isSupplementTo" },
+    { "scheme": "url", "identifier": "https://github.com/leadpiperl1/Dandelion", "relation": "isIdenticalTo" }
   ]
 }

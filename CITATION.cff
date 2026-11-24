@@ -1,11 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using these metadata fields."
+message: "If you use the Dandelion OS Interactive Web Simulator, please cite it using the metadata below."
 type: software
+title: "Dandelion OS Interactive Web Simulator (v4.2.0): Browser Companion for Ternary Microkernel, Fly-By-Wire, Haar DWT & Harappan Tensegrity"
+version: 4.2.0
+date-released: 2026-11-24
+license: MIT
+repository-code: "https://github.com/leadpiperl1/Dandelion"
+url: "https://github.com/leadpiperl1/Dandelion"
 authors:
-  - family-names: Grimm
-    given-names: Justin D.
+  - family-names: "Grimm"
+    given-names: "Justin D."
+    affiliation: "Independent Dandelion Substrate Research Group, Gurley, Alabama 35748, USA"
     orcid: "https://orcid.org/0009-0000-5299-0243"
-title: "Dandelion OS: Balanced Ternary & Multi-Substrate Architecture"
-version: v4.1.1
-date-released: 2026-11-05
-url: "https://github.com/leadpiperl1/dandelion-os"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21255229
+    description: "Foundational Dandelion Substrate & Metrological Calibration Preprint"
+  - type: doi
+    value: 10.5281/zenodo.24401748
+    description: "Cognitive Common Carriage & Action-Boundary Separation (v1.1.1)"
+  - type: doi
+    value: 10.5281/zenodo.24508791
+    description: "VP vs VNP Bounded 3D Metrology (v1.0.0)"
